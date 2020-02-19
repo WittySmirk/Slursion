@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <!-- Default information(title. files, etc.)-->
+        <title>Slursion</title>
+        <link href="styles.css" rel="stylesheet"/>
+        <script src="jquery-1.10.2.min.js"></script>
+    </head>
+    <body>
+        <!-- Loads in the background -->
+        <div id="bg">
+            <div id="blackLayer"></div>
+            <img src="FromUnderTheCorkTree.jpg"/>
+        </div>
+
+        <!-- The main component-->
+        <div id="main">
+            <form id="imageandsettings" runat="server">
+                <!-- loads in the album cover -->
+                <div id="image">
+                    <img src="FromUnderTheCorkTree.jpg"/>
+                </div>
+                <!-- creates the selector -->
+                <div id="settings">
+                    <select id="list" onchange="getStyle();">
+                        <option value="blackT">Black Theme</option>
+                        <option value="whiteT">White Theme</option>
+                        <option value="redT">Red Theme</option>
+                        <option value="blueT">Blue Theme</option>
+                    </select>
+                </div>
+            </form>
+            <div id="player">
+                <!-- Creates the song title -->
+                <div id="songTitle">Demo</div>
+                <!-- Creates the Play/Pause, Next, and Previous buttons -->
+                <div id="buttons">
+                    <button id="pre" onclick="pre()"><img src="Pre.png" height="90%" width="90%"/></button>
+                    <button id="play" onclick="playOrPauseSong()"><img src="Pause.png"/></button>
+                    <button id="next" onclick="next()"><img src="Next.png" height="90%" width="90%"/></button>
+                </div>
+
+                <!-- Creates the time bar -->
+                <div id="seek-bar">
+                    <div id="fill"></div>
+                    <div id="handle"></div>
+                </div>
+
+                <!-- Creates the text that displays the current time of the song -->
+                <div id="currentTime">00:00 / 00:</div>
+
+                <!-- Creates the Volume Buttons and Icon -->
+                <div id="volume">
+                    <button id="decrease" onclick="decreaseVolume()">-</button>
+                    <div id="volumeIcon"><img src="Speaker.png" /></div>
+                    <button id="increase" onclick="increaseVolume()">+</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,187 @@
+/* The style for everything in the program */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#bg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#bg img{
+    height: 120vh;
+    width: 105%;
+    -webkit-filter:blur(20px);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#blackLayer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    z-index: 99;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+#image img{
+    height: 65%;
+    width: 100%;
+    margin-top: -5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#settings {
+    position: absolute;
+    top: 2.5%;
+    right: 3%;
+    font-family: "Trebuchet MS";
+}
+
+#settings select, option{
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #E8E8E8;
+}
+
+
+#player{
+    padding: 25px;
+    color:#333;
+    padding-bottom: 50px;
+}
+
+#songTitle{
+    width:300px;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    font-size: 18px;
+    color: #E8E8E8;
+    position: absolute;
+    top: 69.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#buttons{
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+    position:relative;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#play,#next,#pre{
+    width: 70px;
+    height: 70px;
+    border: 0;
+    background-color:#3B3B3B;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#next{
+    width: 37.5px;
+    height: 37.5px;
+    left: 70%;
+}
+#pre{
+    width: 37.5px;
+    height: 37.5px;
+    left: 30%;
+}
+#play img,#next img,#pre img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#seek-bar{
+    width: 500px;
+    height: 7.5px;
+    background-color:gray;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+#fill{
+    height: 5px;
+    background-color:#E8E8E8;
+    border-radius: 20px;
+}
+#handle{
+    width: 8px;
+    height: 8px;
+    background-color:#3B3B3B;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+#currentTime{
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    color: #E8E8E8;
+    position: absolute;
+    top: 95%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+#volume{
+    position: absolute;
+    top: 95%;
+    left: 78%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+#volumeIcon{
+    height: 50px;
+    width:50px;
+    background-color: #3B3B3B;
+    border-radius: 50%;
+}
+#volumeIcon img{
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#decrease,#increase{
+    height: 40px;
+    width: 40px;
+    background-color: #3B3B3B;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-family: fantasy;
+    font-size: 15px;
+    color: #E8E8E8;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    left: -2px;
+    top: 6px;
+    cursor: pointer;
+}
+#increase{
+    left: 2px;
+    top: 6px;
+}
