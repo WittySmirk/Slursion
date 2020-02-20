@@ -6,6 +6,7 @@
         <script src="jquery-1.10.2.min.js"></script>
     </head>
     <body>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <!-- Loads in the background -->
         <div id="bg">
             <div id="blackLayer"></div>
@@ -21,12 +22,7 @@
                 </div>
                 <!-- creates the selector -->
                 <div id="settings">
-                    <select id="list" onchange="getStyle();">
-                        <option value="blackT">Black Theme</option>
-                        <option value="whiteT">White Theme</option>
-                        <option value="redT">Red Theme</option>
-                        <option value="blueT">Blue Theme</option>
-                    </select>
+                    
                 </div>
             </form>
             <div id="player">
@@ -50,9 +46,7 @@
 
                 <!-- Creates the Volume Buttons and Icon -->
                 <div id="volume">
-                    <button id="decrease" onclick="decreaseVolume()">-</button>
                     <div id="volumeIcon"><img src="Speaker.png" /></div>
-                    <button id="increase" onclick="increaseVolume()">+</button>
                 </div>
             </div>
         </div>
