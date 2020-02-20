@@ -14,14 +14,13 @@ var cirrentTime = document.getElementById("currentTime");
 var song = new Audio();
 var currentSong = 0;    // it point to the current song and title
 
-
-window.onload = playSong;   // it will call the function playSong when window is load
-
 function playSong(){
 
     song.src = songs[currentSong];  //set the source of 0th song
 
     songTitle.textContent = title[currentSong]; // set the title of song
+
+    document.title = title[currentSong];
 
     song.play();    // play the song
 }
