@@ -136,7 +136,7 @@ body{
 #volume{
     position: absolute;
     top: 95%;
-    left: 65%;
+    left: 60%;
     transform: translate(-50%,-50%);
     display: flex;
 }
@@ -151,6 +151,27 @@ body{
     height: 35px;
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 0%;
     transform: translate(-50%,-50%);
 }
+#vslider{
+    -webkit-appearance: none;
+    width: 100px;
+    height: 5px;
+    background: white;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position: absolute;
+    top: 30%;
+    left: 200%;
+}
+#vslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: #3B3B3B;
+    cursor: pointer;
+  }

@@ -14,6 +14,8 @@ var cirrentTime = document.getElementById("currentTime");
 var song = new Audio();
 var currentSong = 0;    // it point to the current song and title
 
+var vol = document.getElementById("vslider");
+
 function playSong(){
 
     song.src = songs[currentSong];  //set the source of 0th song
@@ -92,4 +94,8 @@ function pre(){
     $("#play img").attr("src","Pause.png");
     $("#image img").attr("src",poster[currentSong]);
     $("#bg img").attr("src",poster[currentSong]);
+}
+
+vol.oninput = function(){
+    song.volume = this.value / 10;
 }
