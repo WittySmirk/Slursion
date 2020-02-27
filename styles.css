@@ -174,4 +174,552 @@ body{
     border-radius: 50px;
     background: #3B3B3B;
     cursor: pointer;
-  }
+}
+
+
+
+@media (min-width: 360px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    #bg{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+    #bg img{
+        height: 120vh;
+        width: 105%;
+        -webkit-filter:blur(75px);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+    #blackLayer{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0,0,0,.2);
+        position: absolute;
+        z-index: 99;
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+    }
+    #image img{
+        display: block;
+        height: 800px;
+        width: 800px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+    
+    #player{
+        padding: 25px;
+        color:#333;
+        padding-bottom: 50px;
+    }
+    
+    #songTitle{
+        width: 75%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 75px;
+        color: #E8E8E8;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #buttons{
+        height: 100px;
+        width: 100%;
+        margin-top: 50px;
+        position:relative;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #play,#next,#pre{
+        width: 0px;
+        height: 0px;
+        border: 0;
+        background-color:#3B3B3B;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #next{
+        left: 70%;
+    }
+    #pre{
+        left: 30%;
+    }
+    #play img,#next img,#pre img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 150px;
+        height: 150px;
+    }
+    #seek-bar{
+        width: 750px;
+        height: 22px;
+        background-color:white;
+        display: flex;
+        border-radius: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        bottom: 30%;
+        left: 12%;
+        cursor: pointer;
+    }
+    #fill{
+        height: 22px;
+        background-color:#3B3B3B;
+        border-radius: 20px;
+    }
+    #handle{
+        width: 24px;
+        height: 24px;
+        background-color:#3B3B3B;
+        border-radius: 50%;
+        margin-left: -5px;
+        transform: scale(2);
+    }
+    #currentTime{
+        font-family: 'Roboto', sans-serif;
+        font-size: 65px;
+        color: #E8E8E8;
+        position: absolute;
+        top: 73%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+    }
+    #volume{
+        position: absolute;
+        top: 73%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        display: flex;
+    }
+    #volumeIcon{
+        height: 0px;
+        width:0px;
+        background-color: #3B3B3B;
+        border-radius: 50%;
+    }
+    #volumeIcon img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        transform: translate(-50%,-50%);
+    }
+    #vslider{
+        -webkit-appearance: none;
+        width: 250px;
+        height: 20px;
+        background: white;
+        outline: none;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        position: absolute;
+        top: 30%;
+        left: 800%;
+    }
+    #vslider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        background: #3B3B3B;
+        cursor: pointer;
+    }
+}
+
+@media (min-height: 375px) and (min-height: 812){
+    body{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    #bg{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+    #bg img{
+        height: 120vh;
+        width: 105%;
+        -webkit-filter:blur(75px);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+    #blackLayer{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0,0,0,.2);
+        position: absolute;
+        z-index: 99;
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+    }
+    #image img{
+        display: block;
+        height: 850px;
+        width: 850px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    
+    #player{
+        padding: 25px;
+        color:#333;
+        padding-bottom: 50px;
+    }
+    
+    #songTitle{
+        width: 75%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 80px;
+        color: #E8E8E8;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #buttons{
+        height: 100px;
+        width: 100%;
+        margin-top: 50px;
+        position:relative;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #play,#next,#pre{
+        width: 0px;
+        height: 0px;
+        border: 0;
+        background-color:#3B3B3B;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 170%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #next{
+        left: 70%;
+    }
+    #pre{
+        left: 30%;
+    }
+    #play img,#next img,#pre img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 200px;
+        height: 200px;
+    }
+    #seek-bar{
+        width: 800px;
+        height: 22px;
+        background-color:white;
+        display: flex;
+        border-radius: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        bottom: 40%;
+        left: 9%;
+        cursor: pointer;
+    }
+    #fill{
+        height: 22px;
+        background-color:#3B3B3B;
+        border-radius: 20px;
+    }
+    #handle{
+        width: 24px;
+        height: 24px;
+        background-color:#3B3B3B;
+        border-radius: 50%;
+        margin-left: -5px;
+        transform: scale(2);
+    }
+    #currentTime{
+        font-family: 'Roboto', sans-serif;
+        font-size: 65px;
+        color: #E8E8E8;
+        position: absolute;
+        top: 63%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+    }
+    #volume{
+        position: absolute;
+        top: 63%;
+        left: 57%;
+        transform: translate(-50%,-50%);
+        display: flex;
+    }
+    #volumeIcon{
+        height: 0px;
+        width:0px;
+        background-color: #3B3B3B;
+        border-radius: 50%;
+    }
+    #volumeIcon img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        transform: translate(-50%,-50%);
+    }
+    #vslider{
+        -webkit-appearance: none;
+        width: 250px;
+        height: 20px;
+        background: white;
+        outline: none;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        position: absolute;
+        top: 30%;
+        left: 800%;
+    }
+    #vslider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        background: #3B3B3B;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1280px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    #bg{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+    #bg img{
+        height: 120vh;
+        width: 105%;
+        -webkit-filter:blur(75px);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+    #blackLayer{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0,0,0,.2);
+        position: absolute;
+        z-index: 99;
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+    }
+    #image img{
+        display: block;
+        height: 500px;
+        width: 500px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+    }
+    
+    #player{
+        padding: 25px;
+        color:#333;
+        padding-bottom: 50px;
+    }
+    
+    #songTitle{
+        width:300px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #E8E8E8;
+        position: absolute;
+        top: 77%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #buttons{
+        height: 100px;
+        width: 100%;
+        margin-top: 50px;
+        position:relative;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #play,#next,#pre{
+        width: 0px;
+        height: 0px;
+        border: 0;
+        background-color:#3B3B3B;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #next{
+        left: 60%;
+    }
+    #pre{
+        left: 40%;
+    }
+    #play img,#next img,#pre img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 70px;
+        height: 70px;
+    }
+    #seek-bar{
+        width: 500px;
+        height: 7.5px;
+        background-color:white;
+        display: flex;
+        border-radius: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        bottom: 11%;
+        left: 30%;
+        cursor: pointer;
+    }
+    #fill{
+        height: 7.5px;
+        background-color:#3B3B3B;
+        border-radius: 20px;
+    }
+    #handle{
+        width: 8px;
+        height: 8px;
+        background-color:#3B3B3B;
+        border-radius: 50%;
+        margin-left: -5px;
+        transform: scale(2);
+    }
+    #currentTime{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #E8E8E8;
+        position: absolute;
+        top: 92%;
+        left: 35%;
+        transform: translate(-50%,-50%);
+    }
+    #volume{
+        position: absolute;
+        top: 92%;
+        left: 60%;
+        transform: translate(-50%,-50%);
+        display: flex;
+    }
+    #volumeIcon{
+        height: 0px;
+        width:0px;
+        background-color: #3B3B3B;
+        border-radius: 50%;
+    }
+    #volumeIcon img{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        transform: translate(-50%,-50%);
+    }
+    #vslider{
+        -webkit-appearance: none;
+        width: 100px;
+        height: 5px;
+        background: white;
+        outline: none;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        position: absolute;
+        top: 30%;
+        left: 200%;
+    }
+    #vslider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        background: #3B3B3B;
+        cursor: pointer;
+    }
+}
