@@ -113,13 +113,13 @@ body{
 }
 #fill{
     height: 0px;
-    background-color:#3B3B3B;
+    background-color:#F2C900;
     border-radius: 20px;
 }
 #handle{
     width: 8px;
     height: 8px;
-    background-color:#3B3B3B;
+    background-color: #F2C900;
     border-radius: 50%;
     margin-left: -5px;
     transform: scale(2);
@@ -172,7 +172,7 @@ body{
     width: 15px;
     height: 15px;
     border-radius: 50px;
-    background: #3B3B3B;
+    background: #F2C900;
     cursor: pointer;
 }
 
@@ -296,13 +296,13 @@ body{
     }
     #fill{
         height: 22px;
-        background-color:#3B3B3B;
+        background-color:#F2C900;
         border-radius: 20px;
     }
     #handle{
         width: 24px;
         height: 24px;
-        background-color:#3B3B3B;
+        background-color:#F2C900;
         border-radius: 50%;
         margin-left: -5px;
         transform: scale(2);
@@ -355,7 +355,7 @@ body{
         width: 25px;
         height: 25px;
         border-radius: 50px;
-        background: #3B3B3B;
+        background: #F2C900;
         cursor: pointer;
     }
 }
@@ -478,13 +478,13 @@ body{
     }
     #fill{
         height: 22px;
-        background-color:#3B3B3B;
+        background-color:#F2C900;
         border-radius: 20px;
     }
     #handle{
         width: 24px;
         height: 24px;
-        background-color:#3B3B3B;
+        background-color:#F2C900;
         border-radius: 50%;
         margin-left: -5px;
         transform: scale(2);
@@ -537,7 +537,7 @@ body{
         width: 25px;
         height: 25px;
         border-radius: 50px;
-        background: #3B3B3B;
+        background: #F2C900;
         cursor: pointer;
     }
 }
@@ -660,13 +660,13 @@ body{
     }
     #fill{
         height: 7.5px;
-        background-color:#3B3B3B;
+        background-color:#F2C900;
         border-radius: 20px;
     }
     #handle{
         width: 8px;
         height: 8px;
-        background-color:#3B3B3B;
+        background-color:#F2C900;
         border-radius: 50%;
         margin-left: -5px;
         transform: scale(2);
@@ -719,7 +719,7 @@ body{
         width: 15px;
         height: 15px;
         border-radius: 50px;
-        background: #3B3B3B;
+        background: #F2C900;
         cursor: pointer;
     }
 }

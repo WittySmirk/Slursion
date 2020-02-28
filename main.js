@@ -99,3 +99,10 @@ function pre(){
 vol.oninput = function(){
     song.volume = this.value / 10;
 }
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () =>
+      navigator.serviceWorker.register('sw.js')
+        .then(registration => console.log('Service Worker registered'))
+        .catch(err => 'SW registration failed'));
+  }
